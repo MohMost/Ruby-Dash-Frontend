@@ -1,0 +1,82 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  align-items: center;
+  position: absolute;
+  z-index: 2;
+  padding: 1% 10%;
+}
+
+.links_ul {
+  display: flex;
+  align-items: center;
+}
+.links_li {
+  position: relative;
+  display: flex;
+  margin: 0 2rem;
+}
+.links_a {
+  text-decoration: none;
+  color: #42240c;
+  font-family: "Poppins SemiBold";
+  font-size: 20px;
+}
+.log_in {
+  text-decoration: none;
+  color: #42240c;
+  font-family: "Poppins SemiBold";
+  border: 1px solid #42240c;
+  border-radius: 50px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  width: 145px;
+  height: 43px;
+  opacity: 100%;
+}
+.sign_up {
+  text-decoration: none;
+  font-family: "Poppins SemiBold";
+  color: #fff8f8;
+  background: #42240c;
+  border-radius: 50px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  width: 145px;
+  height: 43px;
+  opacity: 100%;
+}
+.sign_up:hover {
+  background: #5c3a1f;
+}
+.log_in:hover {
+  background: #ffeaea;
+}
+.links_a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 3px;
+  background-color: #42240c;
+  transition: transform 200ms ease-in-out;
+
+  transform: scaleX(0);
+}
+
+.links_a:hover::before,
+.links_a:focus::before {
+  transform: scaleX(1);
+}
+@media screen and (max-width: 768px) {
+  .links_ul {
+    display: none;
+  }
+}
