@@ -1,0 +1,24 @@
+.footer {
+  width: 100%;
+  height: 10rem;
+}
+.wave_container {
+  font-size: 0;
+  background-image: linear-gradient(
+    to top,
+    #ea3f27,
+    #ea3f27 0.1rem,
+    transparent 30%
+  );
+}
+.wave_footer {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.footer_filler {
+  height: 100%;
+  width: 100%;
+  background: #ea3f27;
+}

@@ -4,7 +4,6 @@ import classes from "./Header.module.css";
 export default function Header() {
   return (
     <header className={classes.header}>
-      <Navbar />
       <div className={classes.navbar_bg_top}>
         <div className={classes.filler_div}></div>
         <img className={classes.top_svg} src="/waves.svg" alt="" />
@@ -21,7 +20,7 @@ export default function Header() {
         <img className={classes.image} src="/banner.png" alt="artwork" />
       </div>
 
-      {/*<a href="#main" className={classes.arrow_container}>
+      <a href="#main" className={classes.arrow_container}>
         <svg
           className={classes.arrow}
           width="50"
@@ -35,7 +34,7 @@ export default function Header() {
             fill="#42240C"
           />
         </svg>
-      </a>*/}
+      </a>
       <div className={classes.navbar_bg_bottom}>
         <img className={classes.bottom_svg} src="/wave_bottom.svg" alt="" />
         <div className={classes.filler_div_bottom}></div>

@@ -21,15 +21,15 @@
 .navbar_bg_top {
   width: 100%;
   height: auto;
-  display: block;
+  display: none;
   font-size: 0;
   z-index: 1;
 }
 .navbar_bg_bottom {
   background-image: linear-gradient(
     to top,
-    #ffffff,
-    #ffffff 4.2rem,
+    #ffeaea,
+    #ffeaea 4.2rem,
     transparent 50%
   );
   width: 100%;
@@ -118,7 +118,7 @@
   position: absolute;
 
   right: 5%;
-  top: 50%;
+  top: 65%;
   transform: translateY(-50%);
   overflow: hidden;
   z-index: 0;
@@ -138,9 +138,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 20;
 }
 .arrow {
-  top: 53rem;
+  bottom: 3%;
   width: 5rem;
   border-radius: 5px;
   animation: move 1.1s infinite ease-in-out;
@@ -149,13 +150,28 @@
 
 @keyframes move {
   0% {
-    margin-top: 0;
+    margin-bottom: 0;
   }
   50% {
-    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
   100% {
-    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-height: 850px) {
+  .image {
+    width: auto;
+    height: 100vh;
+    position: absolute;
+    right: 7%;
+    top: 70%;
+    transform: translateY(-50%);
+    overflow: hidden;
+    z-index: 0;
+  }
+  .banner_h1 {
+    font-size: 2rem;
   }
 }
 @media screen and (max-width: 1220px) {
@@ -164,7 +180,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    height: 40%;
+    height: 35%;
   }
   .banner {
     text-align: center;
@@ -176,7 +192,7 @@
   }
   .banner_h1 {
     margin-left: 0;
-    font-size: 3rem;
+    font-size: 2.5rem;
     width: 80%;
     color: #fff8f8;
     font-family: "Poppins SemiBold";
@@ -192,7 +208,7 @@
     background-repeat: no-repeat;
   }
 }
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 507px) {
   .banner {
     text-align: center;
     padding: 0;
@@ -202,7 +218,7 @@
     width: 100%;
   }
   .banner_h1 {
-    font-size: 2rem;
+    font-size: 1.9rem;
   }
   .image {
     display: none;
@@ -212,9 +228,18 @@
     background-size: cover;
     background-repeat: no-repeat;
   }
+  .hero_container {
+    height: 25vh;
+  }
 }
 @media screen and (max-width: 360px) {
   .banner_h1 {
     font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 770px) {
+  .arrow {
+    width: 2rem;
+    bottom: 2%;
   }
 }

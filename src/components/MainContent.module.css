@@ -1,0 +1,119 @@
+.main_container .section:nth-child(2) {
+  background: #42240c;
+}
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 5rem 0;
+  background: #d3402d;
+}
+.svg_container {
+  background-image: linear-gradient(
+    to top,
+    #fadbd2,
+    #fadbd2 0.1rem,
+    transparent 50%
+  );
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.top_waves {
+  position: absolute;
+  top: 0;
+}
+.bottom_waves {
+  position: absolute;
+  bottom: 0;
+}
+.text_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  color: #fff8f8;
+  padding: 5rem;
+}
+.text_container p {
+  display: inline-block;
+  font-size: 1.3rem;
+}
+.image_container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: #fff8f8;
+}
+
+.section img {
+  display: block;
+  width: 100%;
+}
+.title {
+  position: absolute;
+
+  background-size: 100%;
+}
+.title2 {
+  display: none;
+}
+@media screen and (max-width: 1217px) {
+  .text_container p {
+    display: inline-block;
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 981px) {
+  .section {
+    flex-direction: column;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .image_container {
+    display: none;
+  }
+  .main_container .section:nth-child(1) {
+    background: #42240c;
+    background-image: url("/picture1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .main_container .section:nth-child(2) {
+    background: #42240c;
+    background-image: url("/picture2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .main_container .section:nth-child(3) {
+    background: #42240c;
+    background-image: url("/picture3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .title2 {
+    display: inline-block;
+    text-align: center;
+  }
+  .text_container {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 981px) {
+  .text_container p {
+    font-size: 15px;
+    width: 100%;
+    padding: 0 !important;
+  }
+}
+@media screen and (max-width: 390px) {
+  .text_container p {
+    font-size: 10px;
+    width: 100%;
+    padding: 0 !important;
+  }
+}
