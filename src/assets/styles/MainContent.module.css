@@ -7,7 +7,7 @@
   align-items: center;
   position: relative;
   margin: 5rem 0;
-  background: #d3402d;
+  background: #f64b3c;
 }
 .svg_container {
   background-image: linear-gradient(
@@ -78,19 +78,16 @@
     display: none;
   }
   .main_container .section:nth-child(1) {
-    background: #42240c;
     background-image: url("/picture1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
   }
   .main_container .section:nth-child(2) {
-    background: #42240c;
     background-image: url("/picture2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
   }
   .main_container .section:nth-child(3) {
-    background: #42240c;
     background-image: url("/picture3.jpg");
     background-size: cover;
     background-repeat: no-repeat;

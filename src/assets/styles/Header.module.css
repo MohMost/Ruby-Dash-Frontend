@@ -3,7 +3,7 @@
   padding-bottom: 0 !important;
   position: relative;
   margin-top: 0 !important;
-  background-image: url("/backgroundbanner.png");
+  background-image: url("../images/backgroundbanner.png");
   background-size: cover;
   height: 100vh;
   width: 100%;
@@ -28,8 +28,8 @@
 .navbar_bg_bottom {
   background-image: linear-gradient(
     to top,
-    #ffeaea,
-    #ffeaea 4.2rem,
+    #fff8f8,
+    #fff8f8 4.2rem,
     transparent 50%
   );
   width: 100%;
@@ -203,7 +203,7 @@
     display: none;
   }
   .header {
-    background-image: url("/banner2.png");
+    background-image: url("../images/banner2.png");
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -224,7 +224,7 @@
     display: none;
   }
   .header {
-    background-image: url("/banner2.png");
+    background-image: url("../images/banner2.png");
     background-size: cover;
     background-repeat: no-repeat;
   }

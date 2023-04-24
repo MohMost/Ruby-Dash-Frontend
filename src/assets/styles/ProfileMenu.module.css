@@ -1,0 +1,66 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 220px;
+  height: 250px;
+  background: #fff8f8;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  margin: 5rem 10%;
+  right: 0;
+  padding: 0 1rem;
+}
+.container ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: left;
+  width: 100%;
+  height: 100%;
+}
+.container ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-top: rgba(66, 36, 12, 0.5) solid 1px;
+  height: 100%;
+}
+.container ul li a {
+  display: flex;
+  margin-left: 3rem;
+  width: 100%;
+  color: #42240c;
+}
+.container ul li a span {
+  margin-left: 0.3rem;
+}
+.new_posts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ea3f27;
+  border-radius: 1rem;
+  padding: 0 0.5rem;
+  margin: 1rem 0;
+}
+.new_posts a {
+  font-family: "Poppins";
+  margin-left: 0.3rem;
+  color: #fff8f8;
+}
+.span {
+  font-weight: 500;
+}
+.span:hover {
+  font-weight: 700;
+}
+@media screen and (min-width: 1921px) {
+  .container {
+    margin: 6.5rem 10%;
+  }
+}

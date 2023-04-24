@@ -1,15 +1,10 @@
-import "./App.css";
-import BlogList from "./components/BlogList";
-import Categories from "./components/Categories";
-import Header from "./components/Header";
-import MainContent from "./components/MainContent";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
-import Login from "./components/Login";
-import SignUp from "./components/SignUp";
+import Login from "./pages/login/Login";
+import SignUp from "./pages/signup/SignUp";
 import { BrowserRouter, Link, Routes, Route } from "react-router-dom";
-import Home from "./components/Home";
-import Blogs from "./components/Blogs";
+import Home from "./pages/home/Home";
+import Blogs from "./pages/blogs/Blogs";
 function App() {
   return (
     <BrowserRouter>

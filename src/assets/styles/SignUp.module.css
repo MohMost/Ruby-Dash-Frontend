@@ -3,7 +3,7 @@
   padding-bottom: 0 !important;
   position: relative;
   margin-top: 0 !important;
-  background-image: url("/backgroundbanner.png");
+  background-image: url("../images/backgroundbanner.png");
   background-size: cover;
   height: 100vh;
   width: 100%;
@@ -58,7 +58,7 @@
   justify-content: space-between;
   align-items: center;
   overflow: hidden;
-  height: 895px;
+  width: 895px;
   height: 607px;
 }
 .form {
@@ -67,7 +67,7 @@
   align-items: center;
   justify-content: space-between;
 
-  width: 100%;
+  width: 80%;
   height: 80%;
   padding: 0 5rem;
 }
@@ -138,18 +138,18 @@
 .buttons {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 }
 .continue_button {
   background-color: #42240c;
-  width: 8.4rem;
+  width: 7.5rem;
   font-size: 15px;
   margin: 20px 17px;
 }
 .google_button {
   background-color: #ea3f27;
-  width: 11rem;
+  width: 12rem;
   margin-top: 17px;
 }
 @media screen and (max-width: 945px) {

@@ -1,0 +1,125 @@
+.section_category {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+.category_button {
+  border: #42240c solid 0.13rem;
+  border-radius: 1rem;
+  padding: 0.2rem 0.5rem;
+  display: none;
+  cursor: pointer;
+}
+.category_button svg {
+  margin-left: 0.2rem;
+}
+.categories {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+}
+.categories_2 {
+  padding: 0 1rem;
+  display: none;
+  justify-content: space-between;
+  text-align: center;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, 5%);
+  background: #fff8f8;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+.category_2 {
+  margin: 2rem 0;
+}
+.category_2 a {
+  color: #42240c;
+  font-weight: 500;
+}
+.category_list {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Inter", sans-serif;
+}
+.category {
+  position: relative;
+  margin: 0 2rem;
+  opacity: 0.8;
+}
+.category:hover {
+  opacity: 1;
+}
+.category_a {
+  color: #42240c;
+}
+.category::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  background-color: #42240c;
+  transition: transform 200ms ease-in-out;
+  transform: scaleX(0);
+}
+.category:hover::before,
+.category:focus::before {
+  transform: scaleX(1);
+}
+.categories_h2 {
+  font-family: "Inter SemiBold", sans-serif;
+  color: #42240c;
+  font-size: 1.5rem;
+}
+.line {
+  width: 90%;
+  height: 2px;
+  background: #42240c;
+  opacity: 0.5;
+  margin-top: 1rem;
+}
+.category_a_2:hover {
+  font-weight: 700;
+}
+@media screen and (max-width: 1771px) {
+  .category_a {
+    font-size: 0.9rem;
+  }
+  .categories_h2 {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (max-width: 1461px) {
+  .category_a {
+    font-size: 0.8rem;
+  }
+  .category {
+    margin: 0 1rem;
+  }
+  .categories_h2 {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 804px) {
+  .categories {
+    display: none;
+  }
+  .category_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .categories_2 {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    position: absolute;
+  }
+}
