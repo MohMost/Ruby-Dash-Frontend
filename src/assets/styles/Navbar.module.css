@@ -3,7 +3,7 @@
 }
 .navbar {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   width: 100%;
   align-items: center;
   position: absolute;
@@ -106,8 +106,8 @@
   display: none;
 }
 .icon {
-  display: none;
   cursor: pointer;
+  border-radius: 50%;
 }
 .log_in_out {
   display: flex;
@@ -117,7 +117,7 @@
 .pages {
   display: flex;
   justify-content: space-between;
-  width: 30%;
+  width: 50%;
 }
 @media screen and (max-width: 900px) {
   .links_ul {

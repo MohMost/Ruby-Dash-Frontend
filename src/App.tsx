@@ -5,17 +5,20 @@ import SignUp from "./pages/signup/SignUp";
 import { BrowserRouter, Link, Routes, Route } from "react-router-dom";
 import Home from "./pages/home/Home";
 import Blogs from "./pages/blogs/Blogs";
+import { UserContextProvider } from "./components/UserContext";
 function App() {
   return (
     <BrowserRouter>
-      <Navbar />
-      <Routes>
-        <Route index element={<Home />} />
-        <Route path="login" element={<Login />} />
-        <Route path="signup" element={<SignUp />} />
-        <Route path="blogs" element={<Blogs />} />
-      </Routes>
-      <Footer />
+      <UserContextProvider>
+        <Navbar />
+        <Routes>
+          <Route index element={<Home />} />
+          <Route path="login" element={<Login />} />
+          <Route path="signup" element={<SignUp />} />
+          <Route path="blogs" element={<Blogs />} />
+        </Routes>
+        <Footer />
+      </UserContextProvider>
     </BrowserRouter>
   );
 }

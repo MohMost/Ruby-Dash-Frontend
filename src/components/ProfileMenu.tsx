@@ -1,26 +1,34 @@
 import classes from "../assets/styles/ProfileMenu.module.css";
 
-export default function ProfileMenu() {
+export default function ProfileMenu({ onLogout, onUserName }: any) {
   return (
     <div className={classes.container}>
-      <a href="" className={classes.new_posts}>
-        <svg
-          width="20"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="#fff8f8"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
-          />
-        </svg>
+      <div className={classes.username_container}>
+        <a href="" className={classes.username}>
+          Logged in as <span>{onUserName}</span>
+        </a>
+      </div>
+      <div className={classes.new_posts_container}>
+        <a href="" className={classes.new_posts}>
+          <svg
+            width="20"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="#fff8f8"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
+            />
+          </svg>
 
-        <a href="">New blog</a>
-      </a>
+          <a href="">New blog</a>
+        </a>
+      </div>
+
       <ul>
         <li>
           <a href="">
@@ -107,7 +115,9 @@ export default function ProfileMenu() {
                 d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15M12 9l-3 3m0 0l3 3m-3-3h12.75"
               />
             </svg>
-            <span className={classes.span}>Log out</span>
+            <span className={classes.span} onClick={onLogout}>
+              Log out
+            </span>
           </a>
         </li>
       </ul>

@@ -1,11 +1,17 @@
-import React, { useState } from "react";
+import { useContext, useState } from "react";
 import classes from "../../assets/styles/Login.module.css";
+
+import { Navigate } from "react-router-dom";
+import { UserContext } from "../../components/UserContext";
 export default function Login() {
   const [userName, setUserName] = useState("");
   const [password, setPassword] = useState("");
+  const [profilePicture, setProfilePicture] = useState("");
+  const [redirect, setRedirect] = useState(false);
+  const { setUserInfo }: any = useContext(UserContext);
   async function login(e: any) {
     e.preventDefault();
-    await fetch("http://localhost:3001/login", {
+    const response = await fetch("http://localhost:3001/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -13,8 +19,22 @@ export default function Login() {
       body: JSON.stringify({
         userName,
         password,
+        profilePicture,
       }),
+      credentials: "include",
     });
+
+    if (response.ok) {
+      response.json().then((userInfo) => {
+        setUserInfo(userInfo);
+        setRedirect(true);
+      });
+    } else {
+      alert("wrong credentials");
+    }
+  }
+  if (redirect) {
+    return <Navigate to={"/blogs"} />;
   }
   return (
     <div className={classes.container}>
