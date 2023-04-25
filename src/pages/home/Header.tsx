@@ -1,12 +1,12 @@
 import { useState } from "react";
-import Navbar from "./Navbar";
-import classes from "./Header.module.css";
+import Navbar from "../../components/Navbar";
+import classes from "../../assets/styles/Header.module.css";
 export default function Header() {
   return (
     <header className={classes.header}>
       <div className={classes.navbar_bg_top}>
         <div className={classes.filler_div}></div>
-        <img className={classes.top_svg} src="/waves.svg" alt="" />
+        <img className={classes.top_svg} src="/svgs/waves.svg" alt="" />
       </div>
 
       <div className={classes.banner}>
@@ -17,7 +17,7 @@ export default function Header() {
           <a className={classes.btn}>Write your first blog</a>
         </div>
 
-        <img className={classes.image} src="/banner.png" alt="artwork" />
+        <img className={classes.image} src="/images/banner.png" alt="artwork" />
       </div>
 
       <a href="#main" className={classes.arrow_container}>
@@ -36,7 +36,11 @@ export default function Header() {
         </svg>
       </a>
       <div className={classes.navbar_bg_bottom}>
-        <img className={classes.bottom_svg} src="/wave_bottom.svg" alt="" />
+        <img
+          className={classes.bottom_svg}
+          src="/svgs/wave_bottom.svg"
+          alt=""
+        />
         <div className={classes.filler_div_bottom}></div>
       </div>
     </header>

@@ -1,0 +1,33 @@
+.container {
+  border-radius: 1rem;
+  position: relative;
+  overflow: hidden;
+  height: 2rem;
+  width: 20rem;
+  margin-bottom: 2rem;
+}
+.searchbar {
+  border: solid 1px #42240c;
+  border-radius: 1rem;
+  padding: 0.2rem 0.7rem;
+  height: 100%;
+  width: 100%;
+}
+.icon {
+  top: 0;
+  right: 0;
+  position: absolute;
+  background: #42240c;
+  height: 100%;
+  width: 15%;
+  border: none;
+  color: aliceblue;
+  cursor: pointer;
+}
+.searchbar::placeholder {
+  color: #42240c;
+  opacity: 0.7;
+}
+.searchbar:focus {
+  outline: none;
+}
