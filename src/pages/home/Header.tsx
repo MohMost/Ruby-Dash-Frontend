@@ -1,5 +1,3 @@
-import { useState } from "react";
-import Navbar from "../../components/Navbar";
 import classes from "../../assets/styles/Header.module.css";
 export default function Header() {
   return (

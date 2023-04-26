@@ -1,4 +1,3 @@
-import React from "react";
 import classes from "../../assets/styles/MainContent.module.css";
 import SearchBar from "../../components/SearchBar";
 export default function MainContent() {
