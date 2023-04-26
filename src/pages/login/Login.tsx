@@ -1,6 +1,5 @@
-import { useContext, useState } from "react";
+import { useContext, useState, useEffect } from "react";
 import classes from "../../assets/styles/Login.module.css";
-
 import { Navigate } from "react-router-dom";
 import { UserContext } from "../../components/UserContext";
 export default function Login() {
@@ -9,8 +8,14 @@ export default function Login() {
   const [profilePicture, setProfilePicture] = useState("");
   const [redirect, setRedirect] = useState(false);
   const { setUserInfo }: any = useContext(UserContext);
+  useEffect(() => {
+    if (redirect) {
+      window.location.reload();
+    }
+  }, [redirect]);
   async function login(e: any) {
     e.preventDefault();
+
     const response = await fetch("http://localhost:3001/login", {
       method: "POST",
       headers: {

@@ -7,16 +7,15 @@ import { UserContext } from "./UserContext";
 export default function Navbar() {
   const [modalIsVisible, setModalIsVisible] = useState(false);
   const { userInfo, setUserInfo }: any = useContext(UserContext);
-  const [userPicture, setUserPicture] = useState("");
-  const userName = userInfo?.userName;
 
+  const userName = userInfo?.userName;
+  const userPicture = userInfo?.profilePicture;
   useEffect(() => {
     fetch("http://localhost:3001/profile", {
       credentials: "include",
     }).then((response) => {
       response.json().then((userInfo) => {
         setUserInfo(userInfo);
-        setUserPicture(userInfo?.profilePicture);
       });
     });
   }, []);
